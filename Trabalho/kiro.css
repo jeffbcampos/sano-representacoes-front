@@ -1,0 +1,204 @@
+
+.logo_kiro {
+    margin-top: 20px;
+    position: absolute;         
+    top: -90px;                 
+    left: 50%;                  
+    transform: translateX(-50%);
+    z-index: 9999;              
+    text-align: center;
+}
+
+.logo_kiro .marca-logo {
+    display: block;
+    max-width: 250px;           
+    width: auto;
+    height: auto;
+}
+
+.marca-detalhe {
+    position: relative; 
+    padding: 20px 0 60px 0; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.marca-detalhe .container {
+    position: relative; 
+    padding-top: 150px; 
+}
+
+.intro-marca {
+    max-width: 700px;
+}
+
+.observacao h3 {
+    background-color: #002B49;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    max-width: 400px; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    font-style: normal;
+    text-align: center;
+}
+
+.produto-lista {
+    margin-top: 40px;
+}
+
+.produto-item {
+    align-items: center; 
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.produto-img {
+    width: 80%;
+    height: 250px;
+    padding: 30px 30px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-item h4 {
+    font-size: 25px;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+}
+
+.produto-item p {
+    font-size: 1rem;
+    color: #777;
+    text-align: justify;
+    font-weight: normal;
+    padding: 10px 15px;
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002B49;
+    padding: 20px 15px; 
+    margin: 0;
+    font-size: 1rem; 
+    color: rgb(234, 224, 224);
+    border-top: 1px solid #eee;
+}
+
+.direitos_autorais p {
+    margin: 0; 
+    text-align: center; 
+    font-size: 1rem; 
+    color: rgb(234, 224, 224);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .logo_kiro {
+        top: -50px;
+        margin-top: 10px;
+    }
+    
+    .logo_kiro .marca-logo {
+        max-width: 180px;      
+        height: auto;
+    }
+
+    .marca-detalhe {
+        padding: 10px 15px 40px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .marca-detalhe .container {
+        padding-top: 120px;
+    }
+
+    .observacao h3 {
+        font-size: 1.1rem;
+        max-width: 90%;
+        padding: 8px;
+    }
+    
+    .produto-item {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    .produto-img {
+        width: 90%;
+        height: auto;
+        max-height: 200px;
+        padding: 15px;
+    }
+
+    .produto-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .produto-item p {
+        font-size: 0.95rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .produto-item {
+        flex-basis: 48%;
+    }
+
+    .logo_kiro {
+        top: -80px;
+        margin-top: 40px;
+    }
+
+    .logo_kiro .marca-logo {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo_kiro {
+        top: -40px;
+        margin-top: 5px;
+    }
+    
+    .logo_kiro .marca-logo {
+        max-width: 150px;
+    }
+
+    .marca-detalhe .container {
+        padding-top: 100px;
+    }
+
+    .produto-img {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        padding: 10px;
+    }
+
+    .produto-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .produto-item p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+

@@ -1,0 +1,128 @@
+
+.logo_grano {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -80px; 
+}
+
+.observacao h3 {
+    background-color: #002B49;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    max-width: 400px; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    font-style: normal;
+    text-align: center;
+}
+
+.produto-item {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.produto-img {
+    width: 80%;
+    height: 250px;
+    padding: 80px 30px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-item h4 {
+    font-size: 25px;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+}
+
+.produto-item p {
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: normal;
+    padding: 10px 15px;
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002B49;
+    text-align: center;
+    margin: 0;
+    padding: 20px 15px;
+    font-size: 1rem;
+    color: rgb(234, 224, 224);
+    border-top: 1px solid #eee;
+}
+
+.direitos_autorais p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(234, 224, 224);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .logo_grano {
+        margin-top: -40px;
+        margin-bottom: 15px;
+    }
+
+    .observacao h3 {
+        font-size: 1.1rem;
+        max-width: 90%;
+        padding: 8px;
+    }
+
+    .produto-item {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    .produto-img {
+        width: 90%;
+        height: auto;
+        max-height: 200px;
+        padding: 40px 15px;
+    }
+
+    .produto-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .produto-item p {
+        font-size: 0.95rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo_grano {
+        margin-top: -20px;
+    }
+
+    .produto-img {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        padding: 30px 10px;
+    }
+
+    .produto-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .produto-item p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,226 @@
+
+
+html {
+    scroll-padding-top: 60px; 
+    scroll-behavior: smooth;
+}
+
+
+.header-secundario {
+    background-color: var(--light-bg);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header-secundario .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-pequena {
+    width: 250px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.back-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cta-button {
+    background-color: #002B49;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #00355d;
+    transform: translateY(-2px);
+}
+
+.tabela-preco-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+
+
+.container h2 {
+    font-size: 1.45rem;
+    font-weight: normal;
+}
+
+.container p {
+    font-size: 1.45rem;
+    font-weight: normal;
+    text-align: justify;
+}
+
+
+
+.marca-detalhe {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.marca-logo {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.intro-marca {
+    max-width: 800px;
+    margin: 30px auto 20px;
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+
+
+.destaques-linha {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag-produto {
+    display: inline-block;
+    background-color: #002B49;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+
+
+.produto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.produto-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    min-width: 280px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #002B49;
+}
+
+.produto-info p {
+    font-size: 0.95rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-secundario .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo-pequena {
+        margin-right: 0;
+    }
+
+    .back-button {
+        margin-left: 0;
+    }
+
+    .produto-item {
+        flex-basis: 48%;
+    }
+
+    .marca-detalhe {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .produto-item {
+        flex-basis: 100%;
+    }
+
+    .container h2,
+    .container p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+    .intro-marca {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .tag-produto {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

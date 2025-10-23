@@ -1,0 +1,143 @@
+
+html {
+    scroll-padding-top: 80px;
+}
+
+.container h3 {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 1.45rem;
+    font-weight: normal;
+    margin-top: 70px;
+    text-align: center; 
+    color: white;
+    background-color: #002B49;
+    font-weight: 400;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.marca-detalhe {
+    padding: 90px 0;
+}
+
+.marca-logo {
+    max-width: 400px;
+    margin-top: -35px;
+}
+
+.intro-marca {
+    margin: 0 auto 20px;
+    font-size: 15px;
+}
+
+.destaques-linha {
+    margin-bottom: 40px;
+}
+
+.produto-item {
+    box-sizing: border-box; 
+}
+
+.produto-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-item h4 {
+    font-size: 25px;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+}
+
+.produto-item p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002B49;
+    text-align: center;
+    margin: 0;
+    padding: 20px 15px;
+    font-size: 1rem;
+    color: rgb(234, 224, 224);
+    line-height: 1.5;
+    min-height: unset;   
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .marca-detalhe {
+        padding: 50px 15px;
+    }
+
+    .marca-logo {
+        max-width: 250px;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+        margin-top: 40px;
+        padding: 8px;
+    }
+
+    .produto-img {
+        max-width: 90%;
+    }
+
+    .produto-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .produto-item p {
+        font-size: 0.95rem;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marca-detalhe {
+        padding: 30px 10px;
+    }
+
+    .marca-logo {
+        max-width: 200px;
+        margin-top: 0;
+    }
+
+    .container h3 {
+        font-size: 1.1rem;
+        margin-top: 30px;
+    }
+
+    .produto-img {
+        max-width: 100%;
+    }
+
+    .produto-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .produto-item p {
+        font-size: 0.9rem;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+}
